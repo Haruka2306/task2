@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Student> studentList = List.of(new Student("Tanaka", 30, "A"),
-                                            new Student("Yamada", 35, "O"));
+        List<Student> studentList = new ArrayList<>();
+        studentList.add(new Student("Tanaka", 30, "A"));
+        studentList.add(new Student("Yamada", 35, "O"));
 
         System.out.println("-----------");
         for(Student student : studentList) {
